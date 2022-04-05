@@ -146,7 +146,17 @@ const modbus_register_t registers[] = {
             "io_burner_8_1",
             "io_burner_7_2",
             "io_burner_7_1"
-    } } }
+    } } },
+    {
+    {6000, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l1" },
+    {6002, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_l1" },
+    {6004, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_czynna_l1" },
+    {6006, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_bierna_l1" },
+    {6008, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_pozorna_l1" },
+    {6010, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "pf_l1" },
+    {6014, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l2" },
+    {6016, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_l2" },
+    {6094, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "neutral_current" }
 };
 
 #endif  // SRC_MODBUS_REGISTERS_H_
