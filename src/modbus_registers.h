@@ -150,12 +150,38 @@ const modbus_register_t registers[] = {
     {
     {6000, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l1" },
     {6002, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_l1" },
-    {6004, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_czynna_l1" },
-    {6006, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_bierna_l1" },
-    {6008, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_pozorna_l1" },
-    {6010, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "pf_l1" },
+    {6004, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_active_l1" },
+    {6006, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_reactive_l1" },
+    {6008, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_apparent_l1" },
+    {6010, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "powerfactorf_l1" },
+
     {6014, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l2" },
     {6016, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_l2" },
+    {6018, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_active_l2" },
+    {6020, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_reactive_l2" },
+    {6022, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_apparent_l2" },
+    {6024, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "powerfactorf_l2" },
+
+    {6028, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l3" },
+    {6030, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_l3" },
+    {6032, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_active_l3" },
+    {6034, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_reactive_l3" },
+    {6036, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_apparent_l3" },
+    {6038, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "powerfactorf_l3" },
+
+    {6042, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_3phase_mean" },
+    {6044, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_3phase_mean" },
+    {6046, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_active_3phase" },
+    {6048, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_reactive_3phase" },
+    {6050, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_apparent_3phase" },
+    {6052, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "powerfactor_mean" },
+    {6056, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "freq" },
+    {6058, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l1-l2" },
+    {6060, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l2-l2" },
+    {6062, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l3-l1" },
+
+
+
     {6094, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "neutral_current" }
 };
 
