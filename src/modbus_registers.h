@@ -147,7 +147,7 @@ const modbus_register_t registers[] = {
             "io_burner_7_2",
             "io_burner_7_1"
     } } },
-    {
+    
     {6000, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "voltage_l1" },
     {6002, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "current_l1" },
     {6004, MODBUS_TYPE_HOLDING, REGISTER_TYPE_U16, "power_active_l1" },
